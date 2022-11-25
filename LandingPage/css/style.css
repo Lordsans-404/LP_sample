@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Itim&family=Lobster+Two&family=Patrick+Hand+SC&family=Poppins:wght@500&family=Roboto&family=Viga&display=swap');
+body {
+	background: #f1fbff;
+	font-family: 'Poppins', sans-serif;
+}
+
+nav{
+	transition: 0.3s;
+}
+
+.navbar-nav .active{
+	position: relative;
+
+}
+
+.navbar-nav .active::after{
+	content: "";
+	opacity: 1;
+	width: 90%;
+	height: 3px;
+	position: absolute;
+	background-color: #631FCF;
+	left: 5%;
+	top: 30px;
+	animation: activeAnim 1s ease 0s 1 normal;
+}
+
+.nav-link{
+	position: relative;
+}
+/*
+.nav-link:hover::after{
+	content: "";
+	opacity: 1;
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	background-color: red;
+	left: 0;
+}*/
+
+.section-padding {
+	padding: 100px 0;
+}
+
+.mb-6{
+	margin-bottom: 6rem;
+}
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-item img{
+	object-fit: cover;
+}
+
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+    font-family: 'Lobster Two', cursive;
+    font-weight: 600;
+	font-size: 55px;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 20px;
+	line-height: 1.9;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+.navbar .getstarted {
+	background: #106eea;
+	margin-left: 30px;
+	border-radius: 4px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	line-height: 2.3;
+}
+.navbar-collapse .navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: white;
+}
+
+body .navbar{
+	animation: entranceNav 1s ease 0s 1 normal;
+}
+
+.img-area .img-fluid{
+	max-height: 60vh;
+	box-shadow: 0px 8px 45px -15px rgba(225,51,174,0.65);
+	transition: 0.2s;
+	border-radius: 4px;
+}
+
+.img-area .img-fluid:hover{
+	box-shadow: 0px 6px 45px -15px rgba(225,51,174,0.8);
+
+}
+
+div .logo {
+	color: #631FCF;
+	font-size: 25px;
+    font-family: 'Fredoka One', cursive;	
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+div h2 .logo{
+	font-size: 45px;
+}
+
+.section-header h2{
+	font-size: 45px;
+	color: #631FCF;
+    font-family: 'Fredoka One', cursive;	
+}
+
+.logo span{
+    font-family: 'Fredoka One', cursive;	
+    color: #D676FF;
+
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #924DFF;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+}
+.w-100 {
+	height: 100%;
+}
+
+.navbar-collapse .nav-item{
+    font-family: 'Poppins', sans-serif!important;	
+
+}
+
+.btn-primary{
+	background-color: #631FCF;
+	border-color: #631FCF;
+}
+
+div .btn-primary{
+	color: wite;
+}
+
+.bg-light{
+	color: black;
+}
+
+.btn-primary:hover{
+	background-color: #924DFF;
+	border-color: #924DFF;
+}
+
+.about-img img{
+	border-radius: 4px;
+	border: 0.55px solid #631FCF;
+}
+
+.about-text h2{
+	font-family: 'Lobster Two', cursive;
+    font-weight: 600;
+	font-size: 45px;
+}
+
+.about-card .card{
+	background-color: rgba(0, 0, 0, 0);
+	border: 0px;
+}
+
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+.portfolio .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.team .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.services .card-body i {
+	font-size: 50px;
+}
+.team .card-body i {
+	font-size: 20px;
+}
+
+@keyframes entranceNav {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes activeAnim{
+	0%{
+		opacity: 0;
+		transform: translateY(5px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+
+	}
+}
+/* Footer Css */
+footer{
+	position: relative;
+	width: 100%;
+	background: #7770D7;
+	min-height: 100px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+footer .social-icon, .menu-footer{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	flex-wrap: wrap;
+}
+footer .social-icon li,
+footer .menu-footer li{
+	list-style: none;
+}
+footer .social-icon li a{
+	font-size: 2em;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+}
+footer .social-icon li a:hover{
+	transform: translateY(-10px);
+}
+footer .menu-footer li a{
+	font-size: 1.2em;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+	text-decoration: none;
+	opacity: 0.78;
+}
+footer .menu-footer li a:hover{
+	opacity: 1;
+} 
+footer p {
+
+	font-size: 1em;
+	color: #fff;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.card-body .bx{
+	padding-top: 4px;
+	padding-bottom: 8px;
+}
+
+footer .wave{
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background:url(wave.png);
+	background-size: 1000px 100px;
+}
+footer .wave#wave1{
+	z-index: 1000;
+	opacity: 1;
+	bottom: 0;
+	animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+	z-index: 999;
+	opacity: .5;
+	bottom: 10px;
+	animation: animateWave2 4s linear infinite;
+}
+footer .wave#wave3{
+	z-index: 100;
+	opacity: .2;
+	bottom: 15px;
+	animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4{
+	z-index: 999;
+	opacity: .7;
+	bottom: 20px;
+	animation: animateWave2 3s linear infinite;
+}
+@keyframes animateWave{
+	0%{
+		background-position-x: 1000px;
+	}
+	100%{
+		background-position-x: 0px;
+	}
+}
+@keyframes animateWave2{
+	0%{
+		background-position-x: 0px;
+	}
+	100%{
+		background-position-x: 1000px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+
+}
+@media only screen and (max-width: 767px) {
+	.carousel-item {
+		height: 85vh;
+	}
+
+	.img-area .img-fluid {
+		max-height: 80vh;
+	}
+
+	.about-text h2{
+	    font-weight: 600;
+		font-size: 30px;
+	}
+
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 47px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 16px;
+	}
+	.about-text {
+		padding-top: 50px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+}
